@@ -38,4 +38,13 @@ session = requests.session()
 bro.get(url)
 本次我直接输入的网址，怎么使其获取个人主页下的电影排行榜，显示已登陆状态
 
+  # -------------------------重点解决-------------------
+    # 怎么根据获取url
+    # bro.get(url)
+    # 本次我直接输入的网址，怎么使其获取个人主页下的电影排行榜，显示已登陆状态
+    #print('response.url-----------',response.url)
+    #  https://movie.douban.com/typerank?type_name=%E5%96%9C%E5%89%A7&type=24&interval_id=100%3A90&action=
+    bro.get(response.url)
+
+
 
